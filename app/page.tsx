@@ -11,10 +11,16 @@ export default function Home() {
           <h2 className="text-6xl text-center font-bold mb-6 text-emerald-600 dark:text-emerald-400 fancy-font">KM Doula</h2>
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/2">
-              <div className="bg-slate-200 dark:bg-slate-800 w-full aspect-square mb-4 rounded-lg">
+              <div className="w-full aspect-square mb-4 rounded-lg">
                 {/* Image placeholder */}
                 <div className="w-full h-full flex items-center justify-center overflow-hidden">
-                  <Image alt="A photo of Kristin's face" src="/Kristin.png" />
+                  <Image 
+                    alt="A photo of Kristin's face" 
+                    src="/Kristin.png" 
+                    width={500}
+                    height={500}
+                    className="object-cover"
+                  />
                 </div>
               </div>
             </div>
