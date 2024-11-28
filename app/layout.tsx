@@ -13,7 +13,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-{/* Need to create an OG image still */}
+{/* Need to create a route to generate OG images */}
 export const metadata: Metadata = {
   title: "KM Doula - Here for you",
   description: "KM Doula is a doula service located in Grand Rapids, Michigan that provides birth, lactation, and postpartum support.",
