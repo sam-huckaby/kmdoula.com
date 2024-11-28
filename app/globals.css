@@ -14,8 +14,26 @@
   }
 }
 
+@font-face {
+  font-family: 'Playball';
+  src: url('./fonts/Playball-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.fancy-font {
+  font-family: 'Playball', sans-serif;
+}
+
+.bg-ferns {
+  background-image: url('/FERNS.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

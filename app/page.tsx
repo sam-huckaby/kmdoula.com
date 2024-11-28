@@ -1,101 +1,100 @@
-import Image from "next/image";
+import { ContactForm } from "./components/ContactForm";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen bg-mint-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100">
+      {/* About Me Section */}
+      <section id="about" className="p-8 bg-ferns relative">
+        <div className="absolute inset-0 bg-white/80 dark:bg-slate-900/90"></div>
+        <div className="relative z-10">
+          <h2 className="text-6xl text-center font-bold mb-6 text-emerald-600 dark:text-emerald-400 fancy-font">KM Doula</h2>
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="md:w-1/2">
+              <div className="bg-slate-200 dark:bg-slate-800 w-full aspect-square mb-4 rounded-lg">
+                {/* Image placeholder */}
+                <div className="w-full h-full flex items-center justify-center overflow-hidden">
+                  <img src="/Kristin.png" />
+                </div>
+              </div>
+            </div>
+            <div className="md:w-1/2">
+              <p className="text-slate-700 dark:text-slate-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Services & Pricing Section */}
+      <section id="services" className="p-8 bg-green-50 dark:bg-green-900/50">
+        <h2 className="text-3xl font-bold mb-6 text-emerald-600 dark:text-emerald-400 fancy-font">Services & Pricing</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
+            <h3 className="text-xl font-semibold mb-3 text-emerald-500 dark:text-emerald-300">Postpartum Care</h3>
+            <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+              <li>$35 per hour</li>
+              <li>8 hour overnight minimum</li>
+              <li>3 hour daytime minimum</li>
+              <li>Lactation services included with postpartum hours</li>
+            </ul>
+          </div>
+          <div className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
+            <h3 className="text-xl font-semibold mb-3 text-emerald-500 dark:text-emerald-300">Birth Packages</h3>
+            <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+              <li>Pricing: $850-$1800</li>
+              <li>Includes two prenatal visits</li>
+              <li>Postpartum follow-up</li>
+              <li>Optional add-ons available:
+                <ul className="list-disc list-inside ml-6">
+                  <li>Lactation support</li>
+                  <li>Additional postpartum support</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
+            <h3 className="text-xl font-semibold mb-3 text-emerald-500 dark:text-emerald-300">Lactation Support</h3>
+            <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+              <li>$120 for an initial two hour consultation</li>
+              <li>$80 per hour for additional visits</li>
+              <li>Lactation services included with postpartum hours</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="p-8">
+        <h2 className="text-3xl font-bold mb-6 text-emerald-600 dark:text-emerald-400 fancy-font">Get in Touch</h2>
+        <div className="flex flex-col md:flex-row gap-8">
+          {/* Contact Information Column */}
+          <div className="md:w-1/2">
+            <div className="prose dark:prose-invert prose-slate prose-emerald">
+              <p className="pb-2 text-slate-700 dark:text-slate-300">
+                We're here to support you on your journey into parenthood. Whether you're looking for birth doula services, 
+                postpartum care, or have questions about what support might be right for you, we would love to hear from you.
+              </p>
+              <p className="pb-2 text-slate-700 dark:text-slate-300">
+                Feel free to reach out with any questions or concerns you might have; our team is here to support you every step of the way. 
+                Whether you're seeking guidance, looking for reassurance, or just need someone to listen, we are ready to provide personalized 
+                care tailored to your unique journey into parenthood. Your comfort and peace of mind are our priority, so please don't hesitate to get in touch.
+              </p>
+            </div>
+          </div>
+
+          {/* Form Column */}
+          <div className="md:w-1/2">
+            <ContactForm />
+          </div>
+        </div>
+      </section>
+      {/* I think you know what this is */}
+      <footer className="p-6 bg-gray-100 dark:bg-slate-800 text-center">
+        <p className="text-slate-600 dark:text-slate-400">
+          © {new Date().getFullYear()} KM Doula. All rights reserved.
+        </p>
       </footer>
-    </div>
-  );
+    </main>
+  )
 }
