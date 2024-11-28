@@ -28,6 +28,7 @@ export const ContactForm = () => {
         (e.target as HTMLFormElement).reset();
       } catch (error) {
         setSubmitStatus('error');
+        console.log(error);
       } finally {
         setSubmitting(false);
       }

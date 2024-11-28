@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ContactForm } from "./components/ContactForm";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
               <div className="bg-slate-200 dark:bg-slate-800 w-full aspect-square mb-4 rounded-lg">
                 {/* Image placeholder */}
                 <div className="w-full h-full flex items-center justify-center overflow-hidden">
-                  <img src="/Kristin.png" />
+                  <Image alt="A photo of Kristin's face" src="/Kristin.png" />
                 </div>
               </div>
             </div>
