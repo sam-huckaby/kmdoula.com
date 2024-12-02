@@ -60,6 +60,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
+{/*
           <div className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
             <h3 className="text-xl font-semibold mb-3 text-emerald-500 dark:text-emerald-300">Lactation Support</h3>
             <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
@@ -68,6 +69,7 @@ export default function Home() {
               <li>Lactation services included with postpartum hours</li>
             </ul>
           </div>
+*/}
         </div>
       </section>
 
