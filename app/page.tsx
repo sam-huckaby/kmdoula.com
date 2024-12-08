@@ -81,13 +81,13 @@ export default function Home() {
           <div className="md:w-1/2">
             <div className="prose dark:prose-invert prose-slate prose-emerald">
               <p className="pb-2 text-slate-700 dark:text-slate-300">
-                We're here to support you on your journey into parenthood. Whether you're looking for birth doula services, 
-                postpartum care, or have questions about what support might be right for you, we would love to hear from you.
+                I'm here to support you on your journey into parenthood. Whether you're looking for birth doula services, 
+                postpartum care, or have questions about what support might be right for you, I would love to hear from you.
               </p>
               <p className="pb-2 text-slate-700 dark:text-slate-300">
-                Feel free to reach out with any questions or concerns you might have; our team is here to support you every step of the way. 
-                Whether you're seeking guidance, looking for reassurance, or just need someone to listen, we are ready to provide personalized 
-                care tailored to your unique journey into parenthood. Your comfort and peace of mind are our priority, so please don't hesitate to get in touch.
+                Feel free to reach out with any questions or concerns you might have; I am ready to support you every step of the way. 
+                Whether you're seeking guidance, looking for reassurance, or just need someone to listen, I am ready to provide personalized 
+                care tailored to your unique journey into parenthood. Your comfort and peace of mind are my priority, so please don't hesitate to get in touch.
               </p>
             </div>
           </div>
